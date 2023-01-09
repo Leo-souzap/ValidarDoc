@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <title>Validate Docs</title>
+</head>
+<body>
+
+    
+    <img class="logo" src="/Images/docValidator.png" alt="Validador documento">
+
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+    </div>
+
+    <main class="container-input">
+        <h1 class="text">DIGITE SEU DOCUMENTO PARA QUE ELE SEJA VALIDADO:</h1>
+        <input type="text" class="docs" id="txt_docs">
+        <button onclick="getDocument()" id="button" class="button-cta"> VALIDAR </button>
+    </main>
+
+    <div id="container-output" class="container-output hide">
+        <h2 class="title">SEU DOCUMENTO É:</h2>
+        <h2 id="Document" class="Document"></h2>
+    </div>
+
+    <script src="/Functions/Utils.js"></script>
+</body>
+</html>
